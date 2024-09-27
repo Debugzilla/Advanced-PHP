@@ -25,6 +25,30 @@ class sample {
 $prueba = new sample;
 echo $prueba->demo();
 
+    //exercici2
+    class magical {
+        private $ajustes = [];
+    
+        public function __get($name) {
+            return $this->ajustes[$name] ?? null;
+        }
+    
+        public function __set($name, $value) {
+            $this->ajustes[$name] = $value;
+        }
+    }
+    echo "<br/><br/>";
+    $config = new magical();
+    $config->DB = "mongoDB"; // Llama a __set()
+    echo $config->DB; // Llama a __get()
+    
+
+
+
+
+
+
+
 
 
 
