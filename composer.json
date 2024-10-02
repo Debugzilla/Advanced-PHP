@@ -1,0 +1,11 @@
+{
+    "name": "arnauerta/php_advanced",
+    "autoload": {
+        "psr-4": {
+            "Arnauerta\\PhpAdvanced\\": "src/"
+        }
+    },
+    "require": {
+        "nesbot/carbon": "^3.8"
+    }
+}
